@@ -322,7 +322,7 @@ neural networks?&#8221;.  We specify these operations at a low level,
 suitable for use in hardware simulators for groups building new
 processors targeted at deep learning.
 </p><h3 id="sec-where-does-deepbench-fit-in" class="h2" data-heading-depth="2" style="display:block"><span class="heading-before"><span class="heading-label">1.1</span>.&#8194;</span>Where does DeepBench fit in?</h3>
-<p class="p noindent">The Deep Learning ecosystem is consists of several different pieces. 
+<p class="p noindent">The Deep Learning ecosystem consists of several different pieces. 
 We wanted to highlight where DeepBench fits into this ecosystem. 
 The diagram below describes the software and hardware components involved with deep learning.
 At the very top, deep learning frameworks like Baidu&#39;s&nbsp;<a href="https://github.com/baidu/Paddle">PaddlePaddle</a>, Theano, 
@@ -339,7 +339,7 @@ Therefore, we are benchmarking the underlying operations involved in training a 
 Benchmarking these operations will help raise awareness amongst hardware vendors and software developers about the bottlenecks in deep learning training.
 </p><h3 id="sec-methodology" class="h2" data-heading-depth="2" style="display:block"><span class="heading-before"><span class="heading-label">1.2</span>.&#8194;</span>Methodology</h3>
 <p class="p noindent">DeepBench consists of a set of basic operations (dense matrix
-multiplies, convolutions and communication) as well as some recurrent
+multiplications, convolutions and communication) as well as some recurrent
 layer types.  There is an Excel spreadsheet (<code class="code code1">DeepBenchKernels.xlsx</code>)
 in the&nbsp;<a href="https://github.com/baidu-research/DeepBench">DeepBench repository</a> that describes all of the sizes.
 </p>
@@ -393,8 +393,8 @@ in NCHW format i.e.  data is presented in image, feature maps, rows
 and columns.
 </p>
 <p class="p indent">There are many techniques for computing convolutions that are optimal
-for different sizes of the filter and image, including:  direct, matrix multiply
-based, FFT based, and Winograd based approaches.  In the first version
+for different sizes of the filter and image, including:  direct, matrix-multiply
+-based, FFT-based, and Winograd-based approaches.  In the first version
 of this benchmark, we are not concerned about the accuracy of the
 different approaches since the general consensus is that 32-bit
 floating point is accurate <em class="em-star1">enough</em> for each of them.
